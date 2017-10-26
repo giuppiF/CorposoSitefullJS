@@ -28,11 +28,11 @@ $(document).ready(function(){
     sectionsColor: ['#B8AE9C', '#348899', '#F2AE72', '#5C832F', '#B8B89F'],
     sectionSelector: '.vertical-scrolling',
     slideSelector: '.horizontal-scrolling',
-    navigation: true,
+    navigation: false,
     slidesNavigation: true,
     css3: true,
     controlArrows: false,
-    anchors: ['firstSection','secondSection'],
+    anchors: ['firstSection'],
     menu: '#menu',
 
     afterLoad: function(anchorLink, index) {
@@ -54,7 +54,7 @@ $(document).ready(function(){
       }
     },
 
-    afterSlideLoad: function( anchorLink, index, slideAnchor, slideIndex) {
+    /*afterSlideLoad: function( anchorLink, index, slideAnchor, slideIndex) {
       if(anchorLink == 'fifthSection' && slideIndex == 1) {
         // noinspection Annotator
           // noinspection Annotator
@@ -101,6 +101,6 @@ $(document).ready(function(){
         // noinspection Annotator
           $nav.css('background', 'rgba(0, 47, 77, .25)');
       }
-    } 
+    } */
   }); 
 });

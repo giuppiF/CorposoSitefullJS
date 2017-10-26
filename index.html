@@ -6,7 +6,7 @@
 
     <!-- css files -->
     <link href='http://fonts.googleapis.com/css?family=Alegreya+Sans:300,400,700' rel='stylesheet' type='text/css'>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.6.6/jquery.fullPage.css" rel="stylesheet">
+    <link href="css/jquery.fullPage.css" rel="stylesheet">
     <link href="css/main.css" rel="stylesheet">
 
     <!--[if lt IE 9]>
@@ -27,8 +27,11 @@
 
     <nav class="hide">
         <ul id="menu">
-            <li data-menuanchor="fifthSection">
+            <li data-menuanchor="firstSection">
                 <a href="#firstSection" title="First Slide">First Slide</a>
+            </li>
+            <li data-menuanchor="fifthSection/1">
+                <a href="#firstSection/1" title="Second Slide">Second Slide</a>
             </li>
             <li data-menuanchor="fifthSection/1">
                 <a href="#secondSection" title="Second Slide">Second Slide</a>
@@ -38,32 +41,12 @@
 </header>
 
 <div id="fullpage">
-    <!--      <section class="vertical-scrolling">
-            <h2>fullPage.js</h2>
-            <h3>This is the first section by New</h3>
-            <div class="scroll-icon">
-              <p>Jump into the last slide</p>
-              <a href="#fifthSection/1" class="icon-up-open-big"></a>
-            </div>
-          </section>
-          <section class="vertical-scrolling">
-            <h2>fullPage.js</h2>
-            <h3>This is the second section</h3>
-          </section>
-          <section class="vertical-scrolling">
-            <h2>fullPage.js</h2>
-            <h3>This is the third section</h3>
-          </section>
-          <section class="vertical-scrolling">
-            <h2>fullPage.js</h2>
-            <h3>This is the fourth section</h3>
-          </section>-->
     <section class="vertical-scrolling">
-        <div class="horizontal-scrolling">
+        <div class="horizontal-scrolling" data-anchor="slide1">
             <h2>fullPage.js</h2>
             <h3>This is the fifth section and it contains the first slide (actually section == first slide)</h3>
         </div>
-        <div class="horizontal-scrolling">
+        <div class="horizontal-scrolling" data-anchor="slide2">
             <h2>fullPage.js</h2>
             <h3>This is the second slide</h3>
             <p class="end">Thank you!</p>
