@@ -132,7 +132,7 @@
             offsetSections: false,
             resetSliders: false,
             fadingEffect: false,
-            normalScrollElements: null,
+            normalScrollElements: '.slide',
             scrollOverflow: false,
             scrollOverflowReset: false,
             scrollOverflowHandler: $.fn.fp_scrolloverflow ? $.fn.fp_scrolloverflow.iscrollHandler : null,
